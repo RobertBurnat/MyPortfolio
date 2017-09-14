@@ -1,0 +1,147 @@
+body {
+  margin: 0 auto;
+  padding: 15px;
+  font-family: "Raleway", sans-serif;
+  background: url("../images/background.jpeg") center center fixed no-repeat;
+    background-background-size: cover;
+  background-position: 0 60%;
+  max-width: 1600px; }
+
+.btn-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0; }
+  .btn-menu li {
+    width: 100px;
+    line-height: 30px;
+    display: inline-block;
+    margin-right: 7px;
+    cursor: pointer;
+    background-color: #2980b9;
+    border: none; }
+    .btn-menu li a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500; }
+
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px; }
+  header .hamburger-menu {
+    visibility: hidden;
+    list-style-type: none;
+    padding: 0; }
+    header .hamburger-menu li {
+      width: 100px;
+      border: 1px solid yellow;
+      line-height: 30px;
+      display: block;
+      cursor: pointer;
+      background-color: #2980b9; }
+      header .hamburger-menu li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500; }
+  header .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header .hero h4 {
+      font-size: 3vh;
+      color: #fff;
+      font-weight: 700; }
+    header .hero .mordeczka {
+      height: 300px;
+      max-width: 300px;
+      border: 2px solid #000;
+      margin-bottom: 5px; }
+    header .hero #CV {
+      margin-top: 100px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      width: 100px;
+      line-height: 30px;
+      font-weight: 700; }
+  header h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 6vh; }
+  header h4 {
+    margin: 35px 0; }
+
+.aboutme {
+  margin: 10% auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding-bottom: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .aboutme h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4vh;
+    font-weight: 700;
+    margin-bottom: 35px; }
+  .aboutme .text-about {
+    padding: 10px 5vw; }
+  .aboutme .about-container {
+    background: rgba(204, 204, 204, 0.5);
+    border-radius: 15px; }
+
+.skills {
+  margin: 10% auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 7% 5%;
+  color: #fff; }
+  .skills h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold; }
+  .skills .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(204, 204, 204, 0.5);
+    padding: 2%;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    opacity: 10px;
+    display: block; }
+    .skills .row .icon {
+      max-height: 150px;
+      margin-bottom: 50px; }
+    .skills .row .icon-ajax {
+      max-height: 100px;
+      margin-top: 25px; }
+    .skills .row .icon-express {
+      max-height: 100px;
+      margin-top: 25px; }
+
+@media (max-width: 575px) {
+  .btn-menu {
+    display: none; }
+  #CV {
+    display: none; }
+  header .hamburger-menu {
+    visibility: visible; }
+    header .hamburger-menu #hamburger,
+    header .hamburger-menu #cross {
+      border-top-left-radius: 10px; }
+  .aboutme .text-about {
+    padding: 15px 25px; } }
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .skills .row {
+    display: inline-block; }
+    .skills .row .icon {
+      margin: 15px 0; } }
+
+/*# sourceMappingURL=style.css.map */

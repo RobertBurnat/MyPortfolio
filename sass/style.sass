@@ -1,0 +1,159 @@
+//CONFIGS
+
+@mixin h1-config
+	text-transform: uppercase
+	color: #fff
+	font-weight: bold
+	
+@mixin center-config
+	display: flex
+	justify-content: center
+	align-items: center
+
+//VARIABLES
+
+$bg-style: rgba(0, 0, 0, 0.4)
+$white: #fff
+body
+	margin: 0 auto
+	padding: 15px
+	font-family: "Raleway", sans-serif
+	background: url("../images/background.jpeg") center center fixed no-repeat
+		background-size: cover
+	background-position: 0 60%
+	max-width: 1600px
+.btn-menu
+	list-style-type: none
+	padding: 0
+	margin: 20px 0
+	li
+		width: 100px
+		line-height: 30px
+		display: inline-block
+		margin-right: 7px
+		cursor: pointer
+		background-color: #2980b9
+		border: none
+		a
+			color: $white
+			text-decoration: none
+			text-transform: uppercase
+			font-weight: 500
+
+//HEADER
+header
+	background-color: $bg-style
+	border-radius: 20px
+	.hamburger-menu
+		visibility: hidden
+		list-style-type: none
+		padding: 0
+
+		li
+			width: 100px
+			border: 1px solid yellow
+			line-height: 30px
+			display: block
+			
+			cursor: pointer
+			background-color: #2980b9
+			a
+				color: $white
+				text-decoration: none
+				text-transform: uppercase
+				font-weight: 500
+	.hero
+		height: 100vh
+		@include center-config
+		h4
+			font-size: 3vh
+			color: $white
+			font-weight: 700
+		.mordeczka
+			height: 300px
+			max-width: 300px
+			border: 2px solid #000
+			margin-bottom: 5px
+		#CV
+			margin-top: 100px
+			background-color: #e74c3c
+			color: $white
+			border: none
+			width: 100px
+			line-height: 30px
+			font-weight: 700
+	h1
+		@include h1-config
+		font-size: 6vh
+
+	h4
+		margin: 35px 0
+
+//ABOUT ME
+.aboutme
+	margin: 10% auto
+	background: $bg-style
+	border-radius: 20px
+	padding-bottom: 7%
+	@include center-config
+	h1
+		@include h1-config
+		font-size: 4vh
+		font-weight: 700
+		margin-bottom: 35px
+	.text-about
+		padding: 10px 5vw
+	.about-container
+		background: rgba(204, 204, 204, 0.5)
+		border-radius: 15px
+
+//SKILLS
+.skills
+	margin: 10% auto
+	background: $bg-style
+	border-radius: 20px
+	padding: 7% 5%
+	color: $white
+
+	h1
+		@include h1-config
+	.row
+		@include center-config
+		background: rgba(204, 204, 204, 0.5)
+		padding: 2%
+		border-radius: 15px
+		margin-bottom: 25px
+		opacity: 10px
+		display: block
+		.icon 
+			max-height: 150px
+			margin-bottom: 50px
+		.icon-ajax
+			max-height: 100px
+			margin-top: 25px
+		.icon-express
+			max-height: 100px
+			margin-top: 25px
+
+
+@media (max-width: 575px)
+	.btn-menu
+		display: none
+	#CV
+		display: none
+	header
+		.hamburger-menu
+			visibility: visible
+			#hamburger, 
+			#cross
+				border-top-left-radius: 10px
+
+	.aboutme
+		.text-about
+			padding: 15px 25px
+@media(min-width: 576px) and (max-width: 991px)
+	.skills
+		.row
+			display: inline-block
+			.icon
+				margin: 15px 0
