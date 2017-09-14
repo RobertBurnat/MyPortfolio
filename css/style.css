@@ -118,8 +118,6 @@ header {
     .skills .row .icon {
       max-height: 150px;
       margin-bottom: 50px; }
-    .skills .row .icon-html5 {
-      margin-top: 25px; }
     .skills .row .icon-ajax,
     .skills .row .icon-express {
       max-height: 100px;
@@ -142,6 +140,12 @@ header {
   .skills .row {
     display: inline-block; }
     .skills .row .icon {
-      margin: 15px 0; } }
+      margin: 15px 0; }
+    .skills .row .icon-html5 {
+      margin-top: 25px; } }
+
+@media (max-width: 991px) {
+  .skills .row .icon-html5 {
+    margin-top: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
