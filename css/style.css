@@ -143,10 +143,24 @@ header {
   .portfolio .row {
     background: rgba(204, 204, 204, 0.5);
     padding: 2% 0 1% 0;
-    margin-bottom: 2vh; }
+    margin-bottom: 2vh;
+    border-radius: 15px; }
+    .portfolio .row h3 {
+      color: #2c3e50;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .portfolio .row p {
+      font-size: 15px;
+      padding: 0 5vw;
+      color: #fff; }
   .portfolio .photo {
     width: 100%;
     height: 35vh; }
+
+footer {
+  color: white; }
+  footer .fa-heart {
+    color: red; }
 
 @media (max-width: 575px) {
   .btn-menu {
@@ -175,7 +189,8 @@ header {
   .portfolio .row {
     padding: 0; }
     .portfolio .row .photo {
-      width: 90%;
-      margin-top: 15px; } }
+      margin-top: 15px; }
+  footer .copyright {
+    margin-top: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
