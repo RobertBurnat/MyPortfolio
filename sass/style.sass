@@ -1,4 +1,4 @@
-//CONFIGS
+//CONFIGS //
 
 @mixin h1-config
 	text-transform: uppercase
@@ -10,7 +10,12 @@
 	justify-content: center
 	align-items: center
 
-//VARIABLES
+@mixin bg-config
+	margin: 10% auto
+	background: $bg-style
+	border-radius: 20px
+
+//VARIABLES //
 
 $bg-style: rgba(0, 0, 0, 0.4)
 $white: #fff
@@ -40,7 +45,7 @@ body
 			text-transform: uppercase
 			font-weight: 500
 
-//HEADER
+//HEADER SECTION //
 header
 	background-color: $bg-style
 	border-radius: 20px
@@ -89,50 +94,68 @@ header
 	h4
 		margin: 35px 0
 
-//ABOUT ME
+//ABOUT ME SECTIOn //
 .aboutme
-	margin: 10% auto
-	background: $bg-style
-	border-radius: 20px
-	padding-bottom: 7%
+	@include bg-config
+	padding: 7% 0
 	@include center-config
 	h1
 		@include h1-config
 		font-size: 4vh
 		font-weight: 700
-		margin-bottom: 35px
 	.text-about
 		padding: 10px 5vw
 	.about-container
 		background: rgba(204, 204, 204, 0.5)
 		border-radius: 15px
 
-//SKILLS
+//SKILLS SECTION //
 .skills
-	margin: 10% auto
-	background: $bg-style
-	border-radius: 20px
+	@include bg-config
 	padding: 7% 5%
 	color: $white
+
 
 	h1
 		@include h1-config
 	.row
 		@include center-config
 		background: rgba(204, 204, 204, 0.5)
-		padding: 2%
+		padding: 2% 0 1% 0
 		border-radius: 15px
 		margin-bottom: 25px
 		opacity: 10px
 		display: block
 		.icon 
-			max-height: 150px
+			max-height: 75px
 			margin-bottom: 50px
-		.icon-ajax,
-		.icon-express
-			max-height: 100px
-			margin-top: 25px
+		.icon-mern,
+		.icon-mongo
+			opacity: 0.2
+			position: relative
+	.not-yet
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: black
+		font-weight: bolder
+		text-transform: uppercase
+		visibility: visible
 
+//PORTFOLIO SECTION //
+.portfolio
+	@include bg-config
+	padding: 7% 5%
+	h1
+		@include h1-config
+	.row
+		background: rgba(204, 204, 204, 0.5)
+		padding: 2% 0 1% 0
+		margin-bottom: 2vh
+	.photo
+		width: 100%
+		height: 35vh
 
 @media (max-width: 575px)
 	.btn-menu
@@ -163,3 +186,9 @@ header
 			.icon
 			.icon-html5
 				margin-top: 25px
+	.portfolio
+		.row
+			padding: 0
+			.photo
+				width: 90%
+				margin-top: 15px
