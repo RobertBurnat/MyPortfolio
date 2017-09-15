@@ -1,6 +1,4 @@
-# ambitious-project-3
-Ambitious Project #3
-
-Used technologies: HTML5, CSS3, Bootstrap4,Grunt,Sass
+# Portfolio
+Grunt CSS JS JQuery Bootstrap SASS HTML
 
 https://robertburnat.github.io/Portfolio/
