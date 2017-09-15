@@ -19,6 +19,10 @@ body {
     cursor: pointer;
     background-color: #2980b9;
     border: none; }
+    .btn-menu li:hover {
+      background-color: #fff; }
+      .btn-menu li:hover a {
+        color: #2980b9; }
     .btn-menu li a {
       color: #fff;
       text-decoration: none;
@@ -32,13 +36,19 @@ header {
     visibility: hidden;
     list-style-type: none;
     padding: 0; }
+    header .hamburger-menu .cross {
+      font-size: 555px; }
     header .hamburger-menu li {
-      width: 100px;
-      border: 1px solid yellow;
+      border: 1px solid #4d6b07;
       line-height: 30px;
+      width: 150px;
       display: block;
       cursor: pointer;
       background-color: #2980b9; }
+      header .hamburger-menu li:hover {
+        background-color: #fff; }
+        header .hamburger-menu li:hover a {
+          color: #2980b9; }
       header .hamburger-menu li a {
         color: #fff;
         text-decoration: none;
@@ -54,8 +64,7 @@ header {
       color: #fff;
       font-weight: 700; }
     header .hero .mordeczka {
-      height: 300px;
-      max-width: 300px;
+      height: 30vh;
       border: 2px solid #000;
       margin-bottom: 5px; }
     header .hero #CV {
@@ -65,7 +74,10 @@ header {
       border: none;
       width: 100px;
       line-height: 30px;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: .5s; }
+      header .hero #CV:hover {
+        transform: scale(1.2); }
   header h1 {
     text-transform: uppercase;
     color: #fff;
@@ -116,11 +128,17 @@ header {
     display: block; }
     .skills .row .icon {
       max-height: 75px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      transition: .5s; }
+      .skills .row .icon:hover {
+        transform: scale(1.2); }
     .skills .row .icon-mern,
     .skills .row .icon-mongo {
       opacity: 0.2;
       position: relative; }
+      .skills .row .icon-mern:hover,
+      .skills .row .icon-mongo:hover {
+        transform: scale(1); }
   .skills .not-yet {
     position: absolute;
     top: 50%;
@@ -136,6 +154,30 @@ header {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   padding: 7% 5%; }
+  .portfolio .photo-container {
+    position: relative; }
+  .portfolio [class*="col-"] .photo-container:hover .layer {
+    visibility: visible; }
+  .portfolio .layer {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; }
+    .portfolio .layer a {
+      margin: 0 6%;
+      font-size: 2em;
+      color: #fff;
+      padding: 0 5px;
+      border-radius: 10px; }
+      .portfolio .layer a:hover {
+        background-color: #fff;
+        color: #000; }
   .portfolio h1 {
     text-transform: uppercase;
     color: #fff;
@@ -158,9 +200,26 @@ header {
     height: 35vh; }
 
 footer {
+  margin: 10% auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin: 0;
+  margin-bottom: -15px;
   color: white; }
+  footer .social-media {
+    font-size: 25px;
+    margin-left: 15px; }
+    footer .social-media .fa:hover {
+      transition: 1s;
+      transform: scale(1.6); }
   footer .fa-heart {
     color: red; }
+  footer h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold; }
+  footer .shadow {
+    visibility: hidden; }
 
 @media (max-width: 575px) {
   .btn-menu {
@@ -186,11 +245,17 @@ footer {
 @media (max-width: 991px) {
   .skills .row .icon-html5 {
     margin-top: 25px; }
+  .portfolio .layer {
+    margin-top: 15px; }
   .portfolio .row {
     padding: 0; }
     .portfolio .row .photo {
       margin-top: 15px; }
-  footer .copyright {
-    margin-top: 15px; } }
+  footer {
+    text-align: center; }
+    footer .copyright {
+      margin-top: 15px; }
+    footer .social-media {
+      margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */

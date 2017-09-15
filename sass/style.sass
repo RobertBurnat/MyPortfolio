@@ -39,6 +39,10 @@ body
 		cursor: pointer
 		background-color: #2980b9
 		border: none
+		&:hover
+			background-color: $white
+			a
+				color: #2980b9
 		a
 			color: $white
 			text-decoration: none
@@ -53,12 +57,19 @@ header
 		visibility: hidden
 		list-style-type: none
 		padding: 0
+		.cross
+			font-size: 555px
 
 		li
-			width: 100px
-			border: 1px solid yellow
+			border: 1px solid #4d6b07
 			line-height: 30px
+			width: 150px
 			display: block
+			&:hover
+				background-color: $white
+				a
+					color: #2980b9
+				
 			
 			cursor: pointer
 			background-color: #2980b9
@@ -75,8 +86,7 @@ header
 			color: $white
 			font-weight: 700
 		.mordeczka
-			height: 300px
-			max-width: 300px
+			height: 30vh
 			border: 2px solid #000
 			margin-bottom: 5px
 		#CV
@@ -87,6 +97,9 @@ header
 			width: 100px
 			line-height: 30px
 			font-weight: 700
+			transition: .5s
+			&:hover
+				transform: scale(1.2)
 	h1
 		@include h1-config
 		font-size: 6vh
@@ -129,10 +142,15 @@ header
 		.icon 
 			max-height: 75px
 			margin-bottom: 50px
+			transition: .5s
+			&:hover
+				transform: scale(1.2)
 		.icon-mern,
 		.icon-mongo
 			opacity: 0.2
 			position: relative
+			&:hover
+				transform: scale(1)
 	.not-yet
 		position: absolute
 		top: 50%
@@ -147,6 +165,35 @@ header
 .portfolio
 	@include bg-config
 	padding: 7% 5%
+	.photo-container
+		position: relative
+	[class*="col-"]
+		.photo-container
+			&:hover
+				.layer
+					visibility: visible
+	.layer
+		color: #fff
+		position: absolute
+		top: 0
+		background: rgba(0, 0, 0, .8)
+		width: 100%
+		height: 35vh
+		display: flex
+		justify-content: center
+		align-items: center
+		visibility: hidden
+
+		a
+			margin: 0 6%
+			font-size: 2em
+			color: $white
+			padding: 0 5px
+			border-radius: 10px
+			&:hover
+				background-color: $white
+				color: #000
+
 	h1
 		@include h1-config
 	.row
@@ -165,10 +212,27 @@ header
 	.photo
 		width: 100%
 		height: 35vh
+
+//FOOTER SECTION
 footer
+	@include bg-config
+	margin: 0
+	margin-bottom: -15px
 	color: white
+	.social-media
+		font-size: 25px
+		margin-left: 15px
+		.fa
+		
+			&:hover
+				transition: 1s
+				transform: scale(1.6)
 	.fa-heart
 		color: red
+	h1
+		@include h1-config
+	.shadow
+		visibility: hidden
 
 @media (max-width: 575px)
 	.btn-menu
@@ -200,11 +264,16 @@ footer
 			.icon-html5
 				margin-top: 25px
 	.portfolio
+		.layer
+			margin-top: 15px
 		.row
 			padding: 0
 			.photo
 				
 				margin-top: 15px
 	footer
+		text-align: center
 		.copyright
 			margin-top: 15px
+		.social-media
+			margin: 0
