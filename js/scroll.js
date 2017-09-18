@@ -4,7 +4,7 @@ sr.reveal('.hero', 70);
 sr.reveal('.about', 50);
 sr.reveal('p', 50);
 sr.reveal('.icon', 50);
-sr.reveal('.not-yet', 50);
+sr.reveal('.nope');
 sr.reveal('#header-skills', 50);
 sr.reveal('#portfoliero', 50);
 sr.reveal('#project', 50);
