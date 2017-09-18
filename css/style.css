@@ -2,9 +2,9 @@ body {
   margin: 0 auto;
   padding: 15px;
   font-family: "Raleway", sans-serif;
-  background: url("../images/background.jpeg") center center fixed no-repeat;
-    background-background-size: cover;
-  background-position: 0 60%;
+  background: url("../images/background2.jpeg") fixed no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
   max-width: 1600px; }
 
 .btn-menu {
@@ -30,7 +30,7 @@ body {
       font-weight: 500; }
 
 header {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px; }
   header .hamburger-menu {
     visibility: hidden;
@@ -88,7 +88,7 @@ header {
 
 .aboutme {
   margin: 10% auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   padding: 7% 0;
   display: flex;
@@ -103,12 +103,12 @@ header {
   .aboutme .text-about {
     padding: 10px 5vw; }
   .aboutme .about-container {
-    background: rgba(204, 204, 204, 0.5);
+    background: rgba(204, 204, 204, 0.7);
     border-radius: 15px; }
 
 .skills {
   margin: 10% auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   padding: 7% 5%;
   color: #fff; }
@@ -124,14 +124,13 @@ header {
     padding: 2% 0 1% 0;
     border-radius: 15px;
     margin-bottom: 25px;
-    opacity: 10px;
     display: block; }
     .skills .row .icon {
       max-height: 75px;
       margin-bottom: 50px;
       transition: .5s; }
       .skills .row .icon:hover {
-        transform: scale(1.2); }
+        transform: scale(1.1); }
     .skills .row .icon-mern,
     .skills .row .icon-mongo {
       opacity: 0.2;
@@ -151,7 +150,7 @@ header {
 
 .portfolio {
   margin: 10% auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   padding: 7% 5%; }
   .portfolio .photo-container {
@@ -194,14 +193,15 @@ header {
     .portfolio .row p {
       font-size: 15px;
       padding: 0 5vw;
-      color: #fff; }
+      color: #fff;
+      font-weight: 700; }
   .portfolio .photo {
     width: 100%;
     height: 35vh; }
 
 footer {
   margin: 10% auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   margin: 0;
   margin-bottom: -15px;
