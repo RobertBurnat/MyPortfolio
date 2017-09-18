@@ -2,7 +2,7 @@
 
 @mixin h1-config
 	text-transform: uppercase
-	color: #fff
+	color: $white
 	font-weight: bold
 	
 @mixin center-config
@@ -11,21 +11,20 @@
 	align-items: center
 
 @mixin bg-config
-	margin: 10% auto
+	margin: 18% auto
 	background: $bg-style
 	border-radius: 20px
 
 //VARIABLES //
 
-$bg-style: rgba(0, 0, 0, 0.5)
-$white: #fff
+$bg-style: rgba(1, 45, 65, 0.8)
+$white: #DAECF3
+$background-row: #DAECF3
 body
 	margin: 0 auto
 	padding: 15px
 	font-family: "Raleway", sans-serif
-	background: url("../images/background2.jpeg") fixed no-repeat
-	background-size: cover
-	background-position: 0 100%;
+	background: #DAECF3
 	max-width: 1600px
 .btn-menu
 	list-style-type: none
@@ -37,12 +36,12 @@ body
 		display: inline-block
 		margin-right: 7px
 		cursor: pointer
-		background-color: #2980b9
+		background-color: #1BA5B8
 		border: none
 		&:hover
 			background-color: $white
 			a
-				color: #2980b9
+				color: #1BA5B8
 		a
 			color: $white
 			text-decoration: none
@@ -61,18 +60,18 @@ header
 			font-size: 555px
 
 		li
-			border: 1px solid #4d6b07
+			border: 1px solid #012D41
 			line-height: 30px
 			width: 150px
 			display: block
 			&:hover
 				background-color: $white
 				a
-					color: #2980b9
+					color: #1BA5B8
 				
 			
 			cursor: pointer
-			background-color: #2980b9
+			background-color: #1BA5B8
 			a
 				color: $white
 				text-decoration: none
@@ -91,7 +90,7 @@ header
 			margin-bottom: 5px
 		#CV
 			margin-top: 100px
-			background-color: #e74c3c
+			background-color: #FF404E
 			color: $white
 			border: none
 			width: 100px
@@ -117,9 +116,9 @@ header
 		font-size: 4vh
 		font-weight: 700
 	.text-about
-		padding: 10px 5vw
+		padding: 10px 2vw
 	.about-container
-		background: rgba(204, 204, 204, 0.7)
+		background: #DAECF3
 		border-radius: 15px
 
 //SKILLS SECTION //
@@ -133,7 +132,7 @@ header
 		@include h1-config
 	.row
 		@include center-config
-		background: rgba(204, 204, 204, 0.5)
+		background: $background-row
 		padding: 2% 0 1% 0
 		border-radius: 15px
 		margin-bottom: 25px
@@ -196,7 +195,7 @@ header
 	h1
 		@include h1-config
 	.row
-		background: rgba(204, 204, 204, 0.5)
+		background: $background-row
 		padding: 2% 0 1% 0
 		margin-bottom: 2vh
 		border-radius: 15px
@@ -207,7 +206,7 @@ header
 		p
 			font-size: 15px
 			padding: 0 5vw
-			color: $white
+			color: #012D41
 			font-weight: 700
 	.photo
 		width: 100%
