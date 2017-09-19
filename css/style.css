@@ -246,10 +246,13 @@ footer {
   .skills .row .icon-html5 {
     margin-top: 25px; }
   .portfolio .layer {
-    margin-top: 15px; }
+    margin-top: 15px;
+    width: 75%;
+    left: 12.5%; }
   .portfolio .row {
     padding: 0; }
     .portfolio .row .photo {
+      width: 75%;
       margin-top: 15px; }
   footer {
     text-align: center; }
