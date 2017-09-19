@@ -160,7 +160,8 @@ header {
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.8);
-    width: 100%;
+    width: 90%;
+    left: 5%;
     height: 30vh;
     display: flex;
     justify-content: center;
@@ -194,7 +195,7 @@ header {
       color: #012D41;
       font-weight: 700; }
   .portfolio .photo {
-    width: 100%;
+    width: 90%;
     height: 30vh; }
 
 footer {
