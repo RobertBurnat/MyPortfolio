@@ -65,16 +65,19 @@ header {
       height: 30vh;
       border: 2px solid #000;
       margin-bottom: 5px; }
-    header .hero #CV {
+    header .hero .cv {
+      display: inline-block;
       margin-top: 100px;
       background-color: #FF404E;
       color: #DAECF3;
       border: none;
-      width: 100px;
       line-height: 30px;
       font-weight: 700;
-      transition: .5s; }
-      header .hero #CV:hover {
+      transition: .5s;
+      width: 100px;
+      height: 30px;
+      text-decoration: none; }
+      header .hero .cv:hover {
         transform: scale(1.2); }
   header h1 {
     text-transform: uppercase;
@@ -127,8 +130,6 @@ header {
       max-height: 75px;
       margin-bottom: 50px;
       transition: .5s; }
-      .skills .row .icon:hover {
-        transform: scale(1.1); }
     .skills .row .icon-mern,
     .skills .row .icon-mongo {
       opacity: 0.2;
