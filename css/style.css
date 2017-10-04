@@ -211,7 +211,8 @@ footer {
     margin: 0 30px; }
     footer .social-media .fa:hover {
       transition: 1s;
-      transform: scale(1.3); }
+      transform: scale(1.3);
+      color: #DAECF3; }
   footer .fa-heart {
     color: red; }
   footer h1 {
