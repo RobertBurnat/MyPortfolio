@@ -13,6 +13,9 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
+        <div class="scrollbar"></div>
+        <button class="comeback"><i class="fa fa-arrow-circle-up"></i></button>
+
 		<!-- HEADER -->
 			<header id="head">
 					<nav class="hamburger-menu">
@@ -46,7 +49,7 @@
 					</div>
 			</header>
 		<!-- About Me SECTION -->
-			<section class="aboutme text-center" id="aboutme" ">
+			<section class="aboutme text-center" id="aboutme">
 				<div class="container" id="about-container">
 					<h1 class="about">About Me</h1>
 					<div class="about-container">
@@ -152,27 +155,27 @@
 						</div>
 						<div class="col-xs-12 col-md-4 col-lg-4" id="project">
 							<div class="photo-container">
-								<img src="./images/rockpaperscissors.png" class="photo" alt="RockPaperScissors">
+								<img src="./images/dicegame.png" class="photo" alt="DiceGame">
 								<div class="layer">
-									<a href="https://robertburnat.github.io/RockPaperScissors/" target="_blank"><i class="fa fa-search fa-lg"></i></a>
-									<a href="https://github.com/RobertBurnat/RockPaperScissors" target="_blank"><i class="fa fa-code fa-lg"></i></a>
+									<a href="https://robertburnat.github.io/Dice-Game" target="_blank"><i class="fa fa-search fa-lg"></i></a>
+									<a href="https://github.com/RobertBurnat/Dice-Game" target="_blank"><i class="fa fa-code fa-lg"></i></a>
 								</div>
 							</div>
-							<h3>Rock Paper Scissors Game</h3>
-							<p>Html / CSS  / Javascript / Bootstrap </p>
+							<h3>The Dice Game</h3>
+							<p>Html / CSS  / Javascript</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-md-4 col-lg-4" id="project">
 							<div class="photo-container">
-								<img src="./images/todo.png" class="photo" alt="todo">
+								<img src="./images/tictactoe.png" class="photo" alt="Tic Tac Toe">
 								<div class="layer">
-									<a href="https://robertburnat.github.io/Kanban_API/" target="_blank"><i class="fa fa-search fa-lg"></i></a>
-									<a href="https://github.com/RobertBurnat/Kanban_API" target="_blank"><i class="fa fa-code fa-lg"></i></a>
+									<a href="https://robertburnat.github.io/Tic-Tac-Toe" target="_blank"><i class="fa fa-search fa-lg"></i></a>
+									<a href="https://github.com/RobertBurnat/Tic-Tac-Toe" target="_blank"><i class="fa fa-code fa-lg"></i></a>
 								</div>
 							</div>
-							<h3>Kanban API Board</h3>
-							<p>Html / CSS /  jQuery / Javascript / Bootstrap / Ajax</p>
+							<h3>Tic-Tac-Toe Game</h3>
+							<p>Html / CSS / Javascript</p>
 						</div>
 						<div class="col-xs-12 col-md-4 col-lg-4" id="project">
 							<div class="photo-container">
@@ -182,19 +185,19 @@
 									<a href="https://github.com/RobertBurnat/Weather_API" target="_blank"><i class="fa fa-code fa-lg"></i></a>
 								</div>
 							</div>
-							<h3>Weather API App</h3>
-							<p>Html / Bootstrap / jQuery / Javascript / Ajax</p>
+							<h3>Weather API</h3>
+							<p>Html / Bootstrap / Javascript / Ajax(fetch)</p>
 						</div>
 						<div class="col-xs-12 col-md-4 col-lg-4" id="project">
 							<div class="photo-container">
-								<img src="./images/gif.jpg" class="photo" alt="gifAPI">
+								<img src="./images/budgety.png" class="photo" alt="gifAPI">
 								<div class="layer">
-									<a class="btn" disabled><i class="fa fa-search fa-lg"></i></a>
-									<a href="https://github.com/RobertBurnat/ReactJS_GifsBrowser" target="_blank"><i class="fa fa-code fa-lg"></i></a>
+									<a href="https://robertburnat.github.io/Project-App-Budgety" target="_blank"><i class="fa fa-search fa-lg"></i></a>
+									<a href="https://github.com/RobertBurnat/Project-App-Budgety" target="_blank"><i class="fa fa-code fa-lg"></i></a>
 								</div>
 							</div>
-							<h3>Gifs Browser React App</h3>
-							<p>Html / ReactJS / Ajax / JSX </p>
+							<h3>Budgety App Project</h3>
+							<p>Html / CSS / Javascript</p>
 						</div>
 					</div>
 					<div class="row">
@@ -231,11 +234,12 @@
 							<h3>React-Router + Redux Countries Info Application </h3>
 							<p>Html / ReactJS / React-Router / Redux / WebPack / NodeJS </p>
 						</div>
+                    </div>
 				</div>
 			</section>
 			<!-- Footer Section -->
 			<footer id="contact">
-				<div class="container-fluid" id="footer-container">
+				<div id="footer-container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-4 col-md-offset-2 col-sm-offset-1">
 							<h1>Contact</h1>
@@ -254,7 +258,8 @@
 					</div>
 				</div>
 			</footer>
-		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="./js/scrollbar.js"></script>
 		<script src="./js/script.js"></script>
 		<script src="./js/scroll.js"></script>
 		<script src="./js/hamburger.js"></script>
