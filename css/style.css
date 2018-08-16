@@ -257,16 +257,14 @@ footer {
     position: absolute;
     top: -9999px;
     left: -9999px; }
-    .cv header .hamburger-menu {
-      visibility: visible; }
-      .cv header .hamburger-menu #hamburger,
-      .cv header .hamburger-menu #cross {
-        border-top-left-radius: 10px;
-        background-color: #DAECF3; }
-        .cv header .hamburger-menu #hamburger #cross,
-        .cv header .hamburger-menu #cross #cross {
-          display: inline-block; }
-    .cv header .aboutme .text-about {
+  header .hamburger-menu {
+    visibility: visible; }
+    header .hamburger-menu #hamburger,
+    header .hamburger-menu #cross {
+      border-top-left-radius: 10px;
+      background-color: #DAECF3;
+      display: inline-block; }
+    header .hamburger-menu .aboutme .text-about {
       padding: 15px 25px; } }
 
 @media (min-width: 576px) and (max-width: 991px) {
