@@ -15,6 +15,14 @@
 	background: $bg-style
 	border-radius: 20px
 
+@mixin links-config
+    color: $white
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 500
+    width: 100%
+    display: inline-block
+
 //VARIABLES //
 
 $bg-style: rgba(1, 45, 65, 0.8)
@@ -63,10 +71,8 @@ body
 			a
 				color: #1BA5B8
 		a
-			color: $white
-			text-decoration: none
-			text-transform: uppercase
-			font-weight: 500
+            @include links-config
+
 
 //HEADER SECTION //
 header
@@ -93,10 +99,7 @@ header
 			cursor: pointer
 			background-color: #1BA5B8
 			a
-				color: $white
-				text-decoration: none
-				text-transform: uppercase
-				font-weight: 500
+                @include links-config
 	.hero
 		height: 100vh
 		@include center-config
@@ -256,57 +259,56 @@ footer
 		visibility: hidden
 
 @media (max-width: 575px)
-	.btn-menu
-		display: none
-	.cv
-		position: absolute !important
-		top: -9999px !important
-		left: -9999px !important
-	header
-		.hamburger-menu
-			visibility: visible
-			#hamburger, 
-			#cross
-				border-top-left-radius: 10px
-				background-color: $white
-			#cross
-			display: inline-block
-				
-	.aboutme
-		.text-about
-			padding: 15px 25px
-@media(min-width: 576px) and (max-width: 991px)
-	.skills
-		.row
-			display: inline-block
-			.icon
-				margin: 15px 0
-			.icon-html5
-				margin-top: 25px
-@media(max-width: 991px)
-	.skills
-		.row
-			.icon
-			.icon-html5
-				margin-top: 25px
-	.portfolio
-		.photo-container
-			
-		.layer
-			margin-top: 15px
-			width: 75%
-			left: 12.5%
-		.row
-			padding: 0
-			.photo
-				width: 75%
-				margin-top: 15px
-	footer
-		text-align: center
-		.copyright
-			margin-top: 15px
-		.social-media
-			margin: 0
-@media (max-width: 575px)
     .comeback
-        font-size: 35px;
+        font-size: 35px
+        z-index: 500
+    .btn-menu
+        display: none
+    .cv
+        position: absolute
+        top: -9999px
+        left: -9999px
+        header
+            .hamburger-menu
+                visibility: visible
+                #hamburger, 
+                #cross
+                    border-top-left-radius: 10px
+                    background-color: $white
+                    #cross
+                        display: inline-block
+            .aboutme
+                .text-about
+                    padding: 15px 25px
+@media(min-width: 576px) and (max-width: 991px)
+    .skills
+        .row
+            display: inline-block
+            .icon
+                margin: 15px 0
+                .icon-html5
+                    margin-top: 25px
+@media(max-width: 991px)
+    .skills
+        .row
+            .icon
+                .icon-html5
+                    margin-top: 25px
+    .portfolio
+        .photo-container
+			
+        .layer
+            margin-top: 15px
+            width: 75%
+            left: 12.5%
+        .row
+            padding: 0
+            .photo
+                width: 75%
+                margin-top: 15px
+    footer
+        text-align: center
+        .copyright
+            margin-top: 15px
+            .social-media
+                margin: 0

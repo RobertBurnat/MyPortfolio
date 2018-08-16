@@ -46,7 +46,9 @@ body {
       color: #DAECF3;
       text-decoration: none;
       text-transform: uppercase;
-      font-weight: 500; }
+      font-weight: 500;
+      width: 100%;
+      display: inline-block; }
 
 header {
   background-color: rgba(1, 45, 65, 0.8);
@@ -72,7 +74,9 @@ header {
         color: #DAECF3;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 500; }
+        font-weight: 500;
+        width: 100%;
+        display: inline-block; }
   header .hero {
     height: 100vh;
     display: flex;
@@ -244,32 +248,37 @@ footer {
     visibility: hidden; }
 
 @media (max-width: 575px) {
+  .comeback {
+    font-size: 35px;
+    z-index: 500; }
   .btn-menu {
     display: none; }
   .cv {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important; }
-  header .hamburger-menu {
-    visibility: visible;
-    display: inline-block; }
-    header .hamburger-menu #hamburger,
-    header .hamburger-menu #cross {
-      border-top-left-radius: 10px;
-      background-color: #DAECF3; }
-  .aboutme .text-about {
-    padding: 15px 25px; } }
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+    .cv header .hamburger-menu {
+      visibility: visible; }
+      .cv header .hamburger-menu #hamburger,
+      .cv header .hamburger-menu #cross {
+        border-top-left-radius: 10px;
+        background-color: #DAECF3; }
+        .cv header .hamburger-menu #hamburger #cross,
+        .cv header .hamburger-menu #cross #cross {
+          display: inline-block; }
+    .cv header .aboutme .text-about {
+      padding: 15px 25px; } }
 
 @media (min-width: 576px) and (max-width: 991px) {
   .skills .row {
     display: inline-block; }
     .skills .row .icon {
       margin: 15px 0; }
-    .skills .row .icon-html5 {
-      margin-top: 25px; } }
+      .skills .row .icon .icon-html5 {
+        margin-top: 25px; } }
 
 @media (max-width: 991px) {
-  .skills .row .icon-html5 {
+  .skills .row .icon .icon-html5 {
     margin-top: 25px; }
   .portfolio .layer {
     margin-top: 15px;
@@ -284,11 +293,7 @@ footer {
     text-align: center; }
     footer .copyright {
       margin-top: 15px; }
-    footer .social-media {
-      margin: 0; } }
-
-@media (max-width: 575px) {
-  .comeback {
-    font-size: 35px; } }
+      footer .copyright .social-media {
+        margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
